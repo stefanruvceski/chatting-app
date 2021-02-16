@@ -1,6 +1,6 @@
 import 'package:socket_io_client/socket_io_client.dart' as IO;
 
-final url = 'https://socket-app-chatting.herokuapp.com';
+final url = 'https://pandas-chat-backend.herokuapp.com/';
 //final url = 'http://localhost:5000/';
 IO.Socket socket = IO.io(url);
 

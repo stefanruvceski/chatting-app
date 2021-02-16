@@ -17948,7 +17948,7 @@ a9s:function(a){var s=0,r=P.a9(t.yq),q,p,o,n,m
 var $async$a9s=P.a5(function(b,c){if(b===1)return P.a6(c,r)
 while(true)switch(s){case 0:o=t.R
 s=3
-return P.ab(G.awM("https://socket-app-chatting.herokuapp.com/login",P.a1(["username",a.a,"password",a.b],o,o)),$async$a9s)
+return P.ab(G.awM("https://pandas-chat-backend.herokuapp.com//login",P.a1(["username",a.a,"password",a.b],o,o)),$async$a9s)
 case 3:n=c
 m=C.aI.J5(0,B.aw8(U.atZ(n.e).c.a.h(0,"charset")).cq(0,n.x),null)
 o=n.b
@@ -67057,8 +67057,8 @@ r($,"azt","ada",function(){return function DartObject(a){this.o=a}})
 r($,"axO","cM",function(){return H.iE(H.ag8(H.c([1],t.X)).buffer,0,null).getInt8(0)===1?C.a2:C.vd})
 r($,"aAj","Nv",function(){return new P.P9(P.v(t.N,H.X("mS")))})
 r($,"aAz","a9X",function(){return new P.WT(P.v(t.N,H.X("an(o)")),P.v(t.S,t.h))})
-q($,"aAF","zk",function(){var p,o="https://socket-app-chatting.herokuapp.com",n="query",m=t.z,l=P.v(m,m),k=P.ja(o),j=k.gcO()+"://"+k.geK(k)+":"+k.gjq(k),i=k.gcL(k),h=$.a9_.a7(0,j)&&$.a9_.h(0,j).c.a7(0,i)
-if(J.d(l.h(0,"forceNew"),!0)||J.d(l.h(0,"force new connection"),!0)||!1===l.h(0,"multiplex")||h){$.al4().a41("ignoring socket cache for https://socket-app-chatting.herokuapp.com")
+q($,"aAF","zk",function(){var p,o="https://pandas-chat-backend.herokuapp.com/",n="query",m=t.z,l=P.v(m,m),k=P.ja(o),j=k.gcO()+"://"+k.geK(k)+":"+k.gjq(k),i=k.gcL(k),h=$.a9_.a7(0,j)&&$.a9_.h(0,j).c.a7(0,i)
+if(J.d(l.h(0,"forceNew"),!0)||J.d(l.h(0,"force new connection"),!0)||!1===l.h(0,"multiplex")||h){$.al4().a41("ignoring socket cache for https://pandas-chat-backend.herokuapp.com/")
 p=Q.afT(l,o)}else{p=$.a9_.h(0,j)
 if(p==null){p=Q.afT(l,o)
 $.a9_.m(0,j,p)}}if(C.b.gaJ(k.gfp(k))&&l.h(0,n)==null)l.m(0,n,k.gfp(k))
