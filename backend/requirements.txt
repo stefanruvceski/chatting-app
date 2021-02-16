@@ -1,0 +1,8 @@
+flask
+pandas
+gunicorn
+Flask-SocketIO==4.3.2
+gevent
+gevent-websocket
+greenlet
+flask_cors

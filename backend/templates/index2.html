@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Chat Room</title>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.8/socket.io.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+$(document).ready(function() {
+
+	var socket = io.connect('http://127.0.0.1:5000');
+
+	socket.on('connect', function() {
+		socket.send('User has connected!');
+	});
+
+	socket.on('message', function(msg) {
+        if(Array.isArray(msg)){
+          
+
+            for (i in msg){
+                console.log(i)
+                $("#messages").append('<li>'+msg[i]+'</li>');
+            }
+        }
+        else{
+            $("#messages").append('<li>'+msg+'</li>');
+        }
+		
+	});
+
+	$('#sendbutton').on('click', function() {
+		message =$('#message').val();
+		username =$('#username').val();
+		room =$('#room').val();
+		socket.emit('message1',{'username':username,'room':room,'message':message});
+		$('#myMessage').val('');
+	});
+
+});
+</script>
+<ul id="messages"></ul>
+<input type="text" id="username" placeholder="Username">
+<input type="text" id="room" placeholder="Room">
+<input type="text" id="message" placeholder="Message">
+<button id="sendbutton">Send</button>
+</body>
+</html>
